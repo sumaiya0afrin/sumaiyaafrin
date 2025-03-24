@@ -83,8 +83,8 @@ const Education = () => {
                       . University life was a rollercoaster of learning,
                       projects. Research on{" "}
                       <i>
-                        "Identifying Abusive Bangla Text on Feminism Using
-                        Machine Learning"
+                        &quot;Identifying Abusive Bangla Text on Feminism Using
+                        Machine Learning&quot;
                       </i>
                       . Exploring how artificial intelligence could analyze
                       social media conversations and detect abusive content was
