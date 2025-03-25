@@ -33,7 +33,7 @@ const Education = () => {
               }`}
               onClick={() => setActiveTab("education")}
             >
-              <FaGraduationCap /> My Education
+              <FaGraduationCap className="text-xl" /> My Education
             </li>
             <li
               className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer ${
@@ -43,7 +43,7 @@ const Education = () => {
               }`}
               onClick={() => setActiveTab("awards")}
             >
-              <PiCertificateFill /> Certifications
+              <PiCertificateFill className="text-xl" /> Certifications
             </li>
             <li
               className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer ${
@@ -53,7 +53,7 @@ const Education = () => {
               }`}
               onClick={() => setActiveTab("skills")}
             >
-              <FaLaptopCode /> Computer Skill
+              <FaLaptopCode className="text-xl" /> Computer Skill
             </li>
           </ul>
         </div>

@@ -41,7 +41,7 @@ const Header = () => {
         <div className="navbar justify-between    text-white p-0">
           <div>
             <a
-              className={`text-4xl md:text-5xl  flex items-center ${logoSize} transition-all duration-500`}
+              className={`text-4xl md:text-5xl font-bold flex items-center ${logoSize} transition-all duration-500`}
             >
               <MdArrowBackIos className="text-[#11f7d5] font-bold" />
               SA <MdArrowForwardIos className="text-[#11f7d5] font-bold" />
@@ -84,7 +84,7 @@ const Header = () => {
                     <Link
                       to="home"
                       smooth={true}
-                      duration={500}
+                      duration={1000}
                       className="hover:text-[#11f7d5]"
                     >
                       <AiOutlineHome /> Home
@@ -94,7 +94,7 @@ const Header = () => {
                     <Link
                       to="about"
                       smooth={true}
-                      duration={500}
+                      duration={1000}
                       className="hover:text-[#11f7d5]"
                     >
                       <FaRegUser /> About
@@ -104,7 +104,7 @@ const Header = () => {
                     <Link
                       to="skills"
                       smooth={true}
-                      duration={500}
+                      duration={1000}
                       className="hover:text-[#11f7d5]"
                     >
                       <RiShapesLine /> Skills
@@ -114,7 +114,7 @@ const Header = () => {
                     <Link
                       to="expertise"
                       smooth={true}
-                      duration={500}
+                      duration={1000}
                       className="hover:text-[#11f7d5]"
                     >
                       <TbFileCertificate /> Expertise
@@ -124,7 +124,7 @@ const Header = () => {
                     <Link
                       to="projects"
                       smooth={true}
-                      duration={500}
+                      duration={1000}
                       className="hover:text-[#11f7d5]"
                     >
                       <IoBriefcaseOutline /> Portfolio
@@ -134,7 +134,7 @@ const Header = () => {
                     <Link
                       to="contact"
                       smooth={true}
-                      duration={500}
+                      duration={1000}
                       className="hover:text-[#11f7d5]"
                     >
                       <FaRegEnvelopeOpen /> Contact

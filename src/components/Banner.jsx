@@ -10,6 +10,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { RiShapesLine } from "react-icons/ri";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { TbFileCertificate } from "react-icons/tb";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -39,84 +40,109 @@ const Banner = () => {
                   Turning ideas into reality through code.
                 </p>
                 <BsCodeSlash className="text-[#11f7d5] text-2xl font-bold" />
-                <div className="relative flex items-center justify-center md:size-32 rounded-full border cursor-pointer ">
-                  <ReactCurvedText
-                    width={120} // Reduced size for better fit
-                    height={120}
-                    cx={60} // Center of the circle
-                    cy={70}
-                    rx={45} // Radius for the curve
-                    ry={50}
-                    startOffset={40} // Adjusted to balance the text alignment
-                    reversed={true}
-                    text="My Projects"
-                    textProps={{
-                      style: {
-                        fontSize: 14,
-                        fill: "#11f7d5",
-                        fontWeight: "bold",
-                      },
-                    }}
-                  />
-                  <motion.span
-                    animate={{ y: [0, -30, 0] }}
-                    transition={{ repeat: Infinity, duration: 2 }}
-                    className="absolute bottom-8 text-2xl"
-                  >
-                    <FaAnglesDown className=" text-2xl" />
-                  </motion.span>
-                </div>
+                <Link
+                  to="projects"
+                  smooth={true}
+                  duration={1000}
+                  className="hover:text-[#11f7d5]"
+                >
+                  <div className="relative flex items-center justify-center md:size-32 rounded-full border cursor-pointer ">
+                    <ReactCurvedText
+                      width={120} // Reduced size for better fit
+                      height={120}
+                      cx={60} // Center of the circle
+                      cy={70}
+                      rx={45} // Radius for the curve
+                      ry={50}
+                      startOffset={40} // Adjusted to balance the text alignment
+                      reversed={true}
+                      text="My Projects"
+                      textProps={{
+                        style: {
+                          fontSize: 14,
+                          fill: "#11f7d5",
+                          fontWeight: "bold",
+                        },
+                      }}
+                    />
+                    <motion.span
+                      animate={{ y: [0, -30, 0] }}
+                      transition={{ repeat: Infinity, duration: 2 }}
+                      className="absolute bottom-8 text-2xl"
+                    >
+                      <FaAnglesDown className=" text-2xl" />
+                    </motion.span>
+                  </div>
+                </Link>
               </div>
 
               {/* menu can be placed here  */}
               <ul className="menu  rounded-box border border-[#11f7d5] text-xl space-y-3 absolute bg-[#071e1f] hidden lg:block">
                 <li>
-                  <a
+                  <Link
+                    to="home"
+                    smooth={true}
+                    duration={1000}
                     className="tooltip tooltip-left hover:text-[#11f7d5]"
                     data-tip="Home"
                   >
                     <AiOutlineHome />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="about"
+                    smooth={true}
+                    duration={1000}
                     className="tooltip tooltip-left hover:text-[#11f7d5]"
                     data-tip="About"
                   >
                     <FaRegUser />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="skills"
+                    smooth={true}
+                    duration={1000}
                     className="tooltip tooltip-left hover:text-[#11f7d5]"
                     data-tip="Skills"
                   >
                     <RiShapesLine />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="expertise"
+                    smooth={true}
+                    duration={1000}
                     className="tooltip tooltip-left hover:text-[#11f7d5]"
                     data-tip="Expertise"
                   >
                     <TbFileCertificate />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="projects"
+                    smooth={true}
+                    duration={1000}
                     className="tooltip tooltip-left hover:text-[#11f7d5]"
                     data-tip="Portfolio"
                   >
                     <IoBriefcaseOutline />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    duration={1000}
                     className="tooltip tooltip-left hover:text-[#11f7d5]"
                     data-tip="Contact"
                   >
                     <FaRegEnvelopeOpen />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

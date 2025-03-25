@@ -5,6 +5,7 @@ import SectionTitle from "./SectionTitle";
 import { LuLanguages } from "react-icons/lu";
 import { MdInterests } from "react-icons/md";
 import { TiArrowForward } from "react-icons/ti";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -65,9 +66,16 @@ const About = () => {
           </div>
 
           <div className="mt-4 lg:mt-6">
-            <button className="btn bg-transparent border border-[#071e1f] text-[#071e1f] text-left shadow-xl">
-              Send Message <TiArrowForward className="text-xl" />
-            </button>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={1000}
+              className="hover:text-[#11f7d5]"
+            >
+              <button className="btn bg-transparent border border-[#071e1f] text-[#071e1f] text-left shadow-xl">
+                Send Message <TiArrowForward className="text-xl" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
