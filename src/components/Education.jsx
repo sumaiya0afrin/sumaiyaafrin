@@ -16,7 +16,7 @@ import { LiaCertificateSolid } from "react-icons/lia";
 const Education = () => {
   const [activeTab, setActiveTab] = useState("education");
   return (
-    <section className="pb-[60px] md:pb-[75px] lg:pb-[100px]">
+    <section id="expertise" className="pb-[60px] md:pb-[75px] lg:pb-[100px]">
       <div className="px-6">
         <SectionTitle title="my expertise" image={book} />
       </div>

@@ -6,7 +6,7 @@ import { TiArrowForward } from "react-icons/ti";
 
 const Contact = () => {
   return (
-    <section className="pb-[60px] md:pb-[75px] lg:pb-[100px]">
+    <section id="contact" className="pb-[60px] md:pb-[75px] lg:pb-[100px]">
       <div className="px-6">
         <SectionTitle title="get in touch" image={chat} />
 
@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
 
         <div className="card bg-base-100 w-full  shrink-0 shadow-2xl">
-          <div className="md:card-body">
+          <div className="card-body">
             <h5 className="md:text-lg text-left mb-4">
               Interested in collaborating? Send me a message to say hello or to
               ask any queries you may have.

@@ -56,6 +56,7 @@ const Projects = () => {
   ];
   return (
     <div
+      id="projects"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundPosition: "center",

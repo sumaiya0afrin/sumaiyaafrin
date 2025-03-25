@@ -21,7 +21,7 @@ const SectionTitle = ({ title, image }) => {
   return (
     <motion.h1
       ref={ref}
-      className="justify-start lg:mb-5 text-2xl md:text-3xl lg:text-5xl font-bold uppercase flex items-center"
+      className="justify-start lg:mb-5 text-2xl md:text-3xl lg:text-5xl font-bold uppercase flex items-center font-dosis"
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"} // Animates only when in view

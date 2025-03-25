@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 const BannerCard = () => {
   return (
     <div className="card md:w-96  shadow-lg border border-[#11f7d5] !px-4 md:p-8">
-      <div className="avatar justify-center">
+      <div className="avatar justify-center pt-4 md:pt-0">
         <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
           <img src={photo} />
         </div>

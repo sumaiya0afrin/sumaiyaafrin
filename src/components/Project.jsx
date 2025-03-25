@@ -46,7 +46,9 @@ const Project = ({ id, title, desc, techStack, mockup, detailsLink }) => {
         {/* Content */}
         <div className="mt-6">
           <div className="mb-4 space-y-1">
-            <h3 className="text-lg md:text-3xl font-semibold">{title}</h3>
+            <h3 className="text-lg md:text-3xl font-semibold font-dosis">
+              {title}
+            </h3>
             <p className="text-sm md:text-base">{desc}</p>
           </div>
 

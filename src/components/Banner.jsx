@@ -13,7 +13,7 @@ import { TbFileCertificate } from "react-icons/tb";
 
 const Banner = () => {
   return (
-    <div>
+    <div id="home">
       <div
         className="py-24 md:py-36 text-white"
         style={{
@@ -29,7 +29,7 @@ const Banner = () => {
               <BannerCard />
               <div className="justify-items-start space-y-4 lg:space-y-6 px-4 md:px-0">
                 <BsCode className="text-[#11f7d5] text-2xl font-bold" />
-                <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-left">
+                <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold text-left ">
                   I&apos;m <span className="text-[#11f7d5]">Sumaiya</span>,
                   <br />
                   FrontEnd Developer

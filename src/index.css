@@ -7,6 +7,9 @@ body {
   font-family: "Nunito", sans-serif;
   color: #071e1f;
 }
+.font-dosis {
+  font-family: "Dosis", sans-serif;
+}
 main > section {
   padding-top: 100px;
   max-width: 1152px;

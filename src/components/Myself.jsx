@@ -6,7 +6,7 @@ const Myself = () => {
         {/* Left Content */}
         <div className="md:w-1/2 space-y-4 text-left z-10">
           <BsCode className="text-[#11f7d5] text-2xl font-bold" />
-          <h2 className="text-2xl md:text-3xl font-bold relative inline-block">
+          <h2 className="text-2xl md:text-3xl font-bold relative inline-block font-dosis">
             Some Like of Me
           </h2>
 

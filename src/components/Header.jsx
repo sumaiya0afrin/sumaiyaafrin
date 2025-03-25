@@ -7,10 +7,11 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import img from "../assets/skill.png";
 import { useEffect, useState } from "react";
 import { TbFileCertificate } from "react-icons/tb";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [navColor, setnavColor] = useState("transparent");
-  const [navShadow, setnavShadow] = useState("transparent");
+
   const [logoSize, setLogoSize] = useState("lg:text-6xl");
 
   const listenScrollEvent = () => {
@@ -38,7 +39,7 @@ const Header = () => {
         <div className="navbar justify-between    text-white p-0">
           <div>
             <a
-              className={`text-4xl md:text-6xl flex items-center ${logoSize} transition-all duration-500`}
+              className={`text-4xl md:text-5xl lg:text-6xl flex items-center ${logoSize} transition-all duration-500`}
             >
               <MdArrowBackIos className="text-[#11f7d5] font-bold" />
               SA <MdArrowForwardIos className="text-[#11f7d5] font-bold" />
@@ -78,34 +79,64 @@ const Header = () => {
                 >
                   {/* Sidebar content here */}
                   <li>
-                    <a className="hover:text-[#11f7d5]">
+                    <Link
+                      to="home"
+                      smooth={true}
+                      duration={500}
+                      className="hover:text-[#11f7d5]"
+                    >
                       <AiOutlineHome /> Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="hover:text-[#11f7d5]">
+                    <Link
+                      to="about"
+                      smooth={true}
+                      duration={500}
+                      className="hover:text-[#11f7d5]"
+                    >
                       <FaRegUser /> About
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="hover:text-[#11f7d5]">
+                    <Link
+                      to="skills"
+                      smooth={true}
+                      duration={500}
+                      className="hover:text-[#11f7d5]"
+                    >
                       <RiShapesLine /> Skills
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="hover:text-[#11f7d5]">
+                    <Link
+                      to="expertise"
+                      smooth={true}
+                      duration={500}
+                      className="hover:text-[#11f7d5]"
+                    >
                       <TbFileCertificate /> Expertise
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="hover:text-[#11f7d5]">
+                    <Link
+                      to="projects"
+                      smooth={true}
+                      duration={500}
+                      className="hover:text-[#11f7d5]"
+                    >
                       <IoBriefcaseOutline /> Portfolio
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="hover:text-[#11f7d5]">
+                    <Link
+                      to="contact"
+                      smooth={true}
+                      duration={500}
+                      className="hover:text-[#11f7d5]"
+                    >
                       <FaRegEnvelopeOpen /> Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

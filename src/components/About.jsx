@@ -8,7 +8,7 @@ import { TiArrowForward } from "react-icons/ti";
 
 const About = () => {
   return (
-    <section className="text-black">
+    <section id="about" className="text-black">
       <div className=" px-6">
         {/* Right Side - Content */}
         <div className="text-left ">

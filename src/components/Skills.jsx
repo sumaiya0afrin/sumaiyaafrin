@@ -29,7 +29,7 @@ const Skills = () => {
     { icon: firebase, label: "firebase" },
   ];
   return (
-    <section>
+    <section id="skills">
       <div className="px-6">
         <SectionTitle title="my skills" image={dot} />
 
@@ -47,7 +47,7 @@ const Skills = () => {
                   <img
                     src={tech.icon}
                     alt=""
-                    className="w-10 md:w-16 grayscale-75 group-hover:grayscale-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                    className="w-10 md:w-16  group-hover:grayscale-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
                   />
                   <h4 className="md:text-xl">{tech.label}</h4>
                 </div>
