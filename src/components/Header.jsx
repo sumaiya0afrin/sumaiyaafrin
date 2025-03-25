@@ -11,11 +11,13 @@ import { Link } from "react-scroll";
 
 const Header = () => {
   const [navColor, setnavColor] = useState("transparent");
+  const [navPadding, setnavPadding] = useState("md:py-6");
 
   const [logoSize, setLogoSize] = useState("lg:text-6xl");
 
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#071e1f") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavPadding("md:py-2.5") : setnavPadding("md:py-6");
     window.scrollY > 10
       ? setLogoSize("lg:text-5xl")
       : setLogoSize("lg:text-6xl");
@@ -29,7 +31,7 @@ const Header = () => {
 
   return (
     <header
-      className="fixed z-50 w-full py-2.5 shadow-lg"
+      className={`fixed z-50 w-full py-2.5 shadow-lg ${navPadding}`}
       style={{
         backgroundColor: navColor,
         transition: "all 1s",
@@ -39,7 +41,7 @@ const Header = () => {
         <div className="navbar justify-between    text-white p-0">
           <div>
             <a
-              className={`text-4xl md:text-5xl lg:text-6xl flex items-center ${logoSize} transition-all duration-500`}
+              className={`text-4xl md:text-5xl  flex items-center ${logoSize} transition-all duration-500`}
             >
               <MdArrowBackIos className="text-[#11f7d5] font-bold" />
               SA <MdArrowForwardIos className="text-[#11f7d5] font-bold" />
