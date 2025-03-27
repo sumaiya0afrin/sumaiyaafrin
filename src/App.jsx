@@ -1,18 +1,11 @@
 import Ball from "../Ball";
-import About from "./components/About";
 import "./index.css";
 
-import Banner from "./components/Banner";
-import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Myself from "./components/Myself";
 
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Projects from "./components/Projects";
 import ScrollToTop from "./components/ScrollToTop";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
@@ -21,7 +14,8 @@ function App() {
       <ScrollToTop />
 
       <Header />
-      <Banner />
+      <Outlet />
+      {/* <Banner />
       <main>
         <About />
         <Skills />
@@ -30,8 +24,8 @@ function App() {
         <Counter />
         <Myself />
         <Contact />
-        <Footer />
-      </main>
+      </main> */}
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 // Custom hook for parallax effect
 function useParallax(value, distance) {
@@ -8,7 +9,18 @@ function useParallax(value, distance) {
 }
 
 // eslint-disable-next-line react/prop-types
-const Project = ({ id, title, desc, techStack, mockup, detailsLink }) => {
+const Project = ({
+  id,
+  title,
+  desc,
+  techStack,
+  mockup,
+  briefDesc,
+  liveLink,
+  github,
+  challenges,
+  improve,
+}) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -69,10 +81,24 @@ const Project = ({ id, title, desc, techStack, mockup, detailsLink }) => {
 
             {/* Button */}
             <div className="size-24 md:size-28 rounded-full content-center">
-              <a
-                href={detailsLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to={`/details/${id}`}
+                state={{
+                  project: {
+                    id,
+                    title,
+                    techStack,
+                    mockup,
+                    briefDesc,
+                    liveLink,
+                    github,
+                    challenges,
+                    improve,
+                  },
+                }}
+                // href={detailsLink}
+                // target="_blank"
+                // rel="noopener noreferrer"
                 className="relative flex items-center justify-center border border-[#11f7d5] 
                          rounded-full size-24 md:size-28 overflow-hidden text-[#11f7d5] 
                          transition-all duration-300 hover:text-[#071e1f]
@@ -84,7 +110,7 @@ const Project = ({ id, title, desc, techStack, mockup, detailsLink }) => {
                   View Details{" "}
                   <GoArrowUpRight className="text-xl md:text-3xl justify-self-center" />
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

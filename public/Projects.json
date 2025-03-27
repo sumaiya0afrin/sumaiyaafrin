@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Hostel Management System",
+    "mockup": "dormdining.png",
+    "description": "Hostel management system designed for university hostel operations.",
+    "liveLink": "https://dormdining-23acc.web.app/",
+    "github": "https://github.com/sumaiya0afrin/DormDining",
+    "techStack": ["React", "Tailwind", "Node.js", "Express.js", "MongoDB", "JWT"],
+    "briefDesc": "This project aims to develop a Hostel Management system for a university, enabling administrators to manage student meals and food reviews using the MERN stack.",
+    "challenges": [
+      "Implementing secure authentication with JWT for both students and admins.",
+      "Handling real-time updates for meal requests, likes, and reviews.",
+      "Optimizing data fetching with TanStack Query for improved performance.",
+      "Managing role-based access control for students and admins.",
+      "Implementing a Stripe-based payment system for meal subscription plans."
+    ],
+    "improvements": [
+      "Enhancing the review system with an edit option",
+      "Adding real-time notifications for new meals and status updates.",
+      "Improving admin dashboard with analytics and better user management.",
+      "Introducing dark mode and UI customization for an improved user experience.",
+      "Enabling social sharing of meal reviews."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Eco-Adventure",
+    "mockup": "ecoventura.png",
+    "description": "Blog-based web application designed to showcase eco-friendly travel adventures.",
+    "liveLink": "https://ecoventura-af912.web.app/",
+    "github": "https://github.com/sumaiya0afrin/EcoVentura",
+    "techStack": ["React", "Tailwind", "Firebase"],
+    "briefDesc": "This project is a Service Review Application System, a platform designed to allow users to review and interact with services listed by others.",
+    "challenges": [
+      " set page titles dynamically.",
+      "Allows users to update their photo URL and name.",
+      "Forget Password Feature Redirects users to Gmail after clicking “Reset Password."
+    ],
+    "improvements": [
+      "Creating a review system where users can give feedback on trips.",
+      "Reward users with discounts for frequent bookings.",
+      "Allow users to download trip details."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Service Review System",
+    "mockup": "serviceboard.png",
+    "description": "A platform designed to allow users to review and interact with services listed by others.",
+    "liveLink": "https://servicescoreboard.web.app/",
+    "github": "https://github.com/sumaiya0afrin/Service-Score-board",
+    "techStack": ["React", "Tailwind", "Node.js", "Express.js", "MongoDB", "Firebase"],
+    "briefDesc": "This system provides hands-on experience in building a full-stack application, integrating user authentication, managing CRUD operations, and handling reviews.",
+    "challenges": [
+      "Handling CRUD operations efficiently, especially with MongoDB for services and reviews",
+      "Ensuring data consistency when updating or deleting services.",
+      "Implementing strong validation for login/registration, service additions, and review submissions.",
+      "Maintaining real-time updates after adding/editing/deleting services and reviews."
+    ],
+    "improvements": [
+      "Implement advanced filtering based on rating, price, or category.",
+      "Notify users when they receive new reviews or replies."
+
+    ]
+  }
+]

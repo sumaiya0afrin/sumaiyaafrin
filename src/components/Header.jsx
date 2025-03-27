@@ -8,11 +8,14 @@ import img from "../assets/skill.png";
 import { useEffect, useState } from "react";
 import { TbFileCertificate } from "react-icons/tb";
 import { Link } from "react-scroll";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const isDetailsPage = location.pathname.includes("/details");
+
   const [navColor, setnavColor] = useState("transparent");
   const [navPadding, setnavPadding] = useState("md:py-6");
-
   const [logoSize, setLogoSize] = useState("lg:text-6xl");
 
   const listenScrollEvent = () => {
@@ -22,6 +25,7 @@ const Header = () => {
       ? setLogoSize("lg:text-5xl")
       : setLogoSize("lg:text-6xl");
   };
+  const backgroundColor = isDetailsPage ? "#071e1f" : navColor;
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
     return () => {
@@ -33,7 +37,7 @@ const Header = () => {
     <header
       className={`fixed z-50 w-full py-2.5 shadow-lg ${navPadding}`}
       style={{
-        backgroundColor: navColor,
+        backgroundColor: backgroundColor,
         transition: "all 1s",
       }}
     >
