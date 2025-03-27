@@ -46,7 +46,7 @@ const Details = () => {
                     <td className="content-start space-y-3">
                       {challenges.map((ch, index) => (
                         <div key={index} className="flex items-center gap-2">
-                          <BiSolidTrafficBarrier className="text-6xl md:text-3xl lg:text-xl text-[#11f7d5]" />
+                          <BiSolidTrafficBarrier className="text-xl text-[#11f7d5] flex-shrink-0" />
                           <span className="capitalize">{ch}</span>
                         </div>
                       ))}
@@ -54,7 +54,7 @@ const Details = () => {
                     <td className="content-start space-y-3">
                       {improvements.map((imp, index) => (
                         <div key={index} className="flex items-center gap-2">
-                          <HiSparkles className="text-6xl md:text-3xl lg:text-xl text-[#11f7d5]" />
+                          <HiSparkles className="text-xl text-[#11f7d5] flex-shrink-0" />
                           <span className="capitalize">{imp}</span>
                         </div>
                       ))}

@@ -8,7 +8,7 @@ import img from "../assets/skill.png";
 import { useEffect, useState } from "react";
 import { TbFileCertificate } from "react-icons/tb";
 import { Link } from "react-scroll";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link as RouterLink } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
@@ -44,12 +44,13 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="navbar justify-between    text-white p-0">
           <div>
-            <a
+            <RouterLink
+              to="/"
               className={`text-4xl md:text-5xl font-bold flex items-center ${logoSize} transition-all duration-500`}
             >
               <MdArrowBackIos className="text-[#11f7d5] font-bold" />
               SA <MdArrowForwardIos className="text-[#11f7d5] font-bold" />
-            </a>
+            </RouterLink>
           </div>
 
           <div className="flex-none">

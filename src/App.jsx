@@ -15,16 +15,6 @@ function App() {
 
       <Header />
       <Outlet />
-      {/* <Banner />
-      <main>
-        <About />
-        <Skills />
-        <Education />
-        <Projects />
-        <Counter />
-        <Myself />
-        <Contact />
-      </main> */}
       <Footer />
     </>
   );
